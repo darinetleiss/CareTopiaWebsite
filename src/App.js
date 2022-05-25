@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import * as ROUTES from "./constants/routes";
+import Home from "./pages";
+import Test from "./pages/signUp/test";
+import SignUp from "./pages/signUp/signUp";
+import LogIn from "./pages/logIn/logIn";
+import HomePage from "./pages/homePage/homePage";
+import { ChangePassword } from "./pages/changePassword/changePassword";
+import UpdateProfile from "./pages/updateProfile/updateProfile";
+import SideBar from "./pages/sidebar/sideBar";
+
+
+// const Login = lazy(() => import("./pages/login"));
+// const SignUp = lazy(() => import("./pages/Signup"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Suspense fallback={<p>Loading...</p>}>
+        <Routes>
+        <Route path="/sideBar" element={<SideBar/>} exact />
+
+        <Route path="/updateProfile" element={<UpdateProfile/>} exact />
+
+        <Route path="/homePage" element={<HomePage/>} exact />
+        <Route path="/changePassword" element={<ChangePassword/>} exact />
+
+          <Route path="/logIn" element={<LogIn/>} exact />
+        <Route  path="/signUp" element={<SignUp/>} exact />
+          <Route  path="/test" element={<Test/>} exact />
+        <Route path={ROUTES.HOME} element={<Home/>} exact />
+          </Routes>
+      </Suspense>
+    </Router>
   );
 }
 
 export default App;
+
+/*lazy allows us to split our huge
+bundel into smaller ones 
+so if 6mb is so much if we type 
+lazy the user will only take 0.5mb
+only the wanted page or feature will load
+and to utulize the lazy function we must use suspense*/

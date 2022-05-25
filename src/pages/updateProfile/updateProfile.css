@@ -1,0 +1,356 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Montez); */
+
+body {
+  background-color: #f5f5f5;
+  font-family: Lato;
+}
+.profile3,
+.content3 {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.profile3 {
+  position: absolute;
+  top: 100px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  height: auto;
+  width: 75%;
+  margin: 20px auto;
+  margin-bottom: 100px;
+}
+.content3 {
+  /* position: absolute; */
+  min-height: 100%;
+  height: 100%;
+  width: 95%;
+  margin: 2.5% auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /*border: 1px solid #eee;*/
+  /*background-color: yellow;*/
+  
+}
+.short-info3 {
+  position: relative;
+  min-height: 100px;
+  height: auto;
+  width: 97.5%;
+  margin: 1.5% auto;
+  /*background-color: #f5f5f5;*/
+  background-color: #fff;
+  background-color: #f2ecee;
+  /*border-top: 2px solid #39cb58;*/
+  border-radius: 2.5px;
+  /*box-shadow: inset 0 -1.5px #ddd;*/
+}
+.details3 {
+  width: 97.5%;
+  /*background-color: red;*/
+  margin: 2.5px auto;
+}
+.tab-heads3 {
+  color: #777;
+  margin: 0 2.5px;
+}
+.tabs3 {
+  height: 200px;
+  width: 97.5%;
+  margin: 0 auto;
+  /* border-top: 2.5px solid #39cb58; */
+  background-color: #f2ecee;
+  border-radius: 2.5px;
+  /* background-color: #f3f3f3; */
+}
+
+span.photo3 {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 10px 0 2.5px;
+  display: block;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+  background: #ddd
+    url("https://www.adtechnology.co.uk/images/UGM-default-user.png");
+  background-size: 100%;
+  border-radius: 100%;
+  border: 2px solid #ddd;
+  padding-left: - 2px;
+}
+span.photo3:after {
+  content: " Add Profile Pic ";
+  text-align: center;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  padding: 35% 0 65%;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  color: #222;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-size: 100%;
+  transition: 0.35s ease-in-out;
+  overflow: hidden;
+  border-radius: 100%;
+}
+span.photo3:hover:after {
+  bottom: 0;
+  opacity: 1;
+  color: #fff;
+}
+
+input[type="file"] {
+  color: #555;
+  font-size: 15px;
+  top: 25px;
+  box-shadow: none !important;
+  margin-left: none !important;
+  background-color: #ededed;
+  width: 200px;
+  border: 0px;
+}
+
+span.name3,
+span.links3 > h3,
+h4 {
+  font-family: Lato;
+  /*font-weight: 200;*/
+}
+span.name3 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: #555;
+  font-size: 18px;
+}
+label {
+  color: #555;
+  line-height: 2.1em;
+  margin-left: 10px;
+}
+label[for="avatar"] {
+  line-height: 120px;
+}
+
+.profile3:hover .btn {
+  opacity: 1;
+}
+.short-info3 span h3,
+h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+div.circles3 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.myCircle3 {
+  height: 200px;
+  width: 97.5%;
+  margin: 0 auto;
+  background-color: #f2ecee;
+  border-radius: 2.5px;
+}
+
+/*Circles Styles
+=========================*/
+.myCircle3 #tabs ul li:nth-child(1) {
+  margin: 0;
+  padding: 0px 5px 10px;
+  /*margin-top: 5px;*/
+  background-color: white;
+  border-radius: 0 0 0 30px;
+}
+.myCircle3 #tabs ul li:nth-child(2) {
+  margin-left: -3px;
+  padding: 0 5px 10px;
+  border-radius: 0 0 30px 0;
+  background-color: white;
+}
+.myCircle3 #tabs .active {
+  border-bottom: none;
+  padding-left: 10px;
+}
+.myCircle3 #tabs {
+  padding: 0;
+  margin: 0;
+}
+
+/*Input Fields Styles
+=========================*/
+
+fieldset textarea,
+input {
+  font-family: Open Sans;
+  font-size: 15px;
+  color: #333;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 4px rgba(10, 39, 129, 0.7);
+  padding: 5px;
+  width: 75%;
+  margin: 5px auto;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  transition: 0.3s ease;
+}
+fieldset textarea {
+  min-height: 40px;
+  max-height: 60px;
+}
+fieldset textarea:hover,
+input:hover {
+  background-color: #fff;
+}
+fieldset textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 1px #1b8da6;
+}
+
+.grid-353 {
+  width: 35%;
+  float: left;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content:right;
+ 
+
+ }
+
+
+.fieldofwork{
+     margin-left:  3px;
+    width: 75%;
+    position: relative;
+ }
+
+
+.grid-653 {
+  position: relative;
+  width: 65%;
+  float: right;
+  
+  /* font-family: Source Sans Pro; */
+  font-weight: 300;
+  font-size: 17px;
+ 
+}
+#tabs-1 div,
+#tabs-2 div,
+#tabs-3 div {
+  border-bottom: 1px solid #ddd;
+}
+
+#qualification3 {
+  border: none;
+  border-radius: 10px;
+}
+
+/* #CLEARFIX HACK
+=========================*/
+.clear:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Edit View
+======================*/
+.content3 h1 {
+  text-align: center;
+  color: #555;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 200;
+  margin: 5px auto 15px auto;
+}
+ 
+select option {
+  padding: 5px;
+}
+fieldset {
+  text-align: center;
+  /* background-color: rgba(0,0,0,0.01); */
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+}
+fieldset:last-child {
+  border-bottom: none;
+}
+input.Btn3 {
+  width: 48%;
+  float: left;
+  display: block;
+  margin: 40px auto;
+  margin-left: 1%;
+  padding: 15px 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #1b8da6;
+  box-shadow: inset 0 0 0 2px #1b8da6;
+  transition: 0.5s ease;
+}
+input.Btn3:hover {
+  background-color: #1b8da6;
+}
+
+#cancel2{
+    margin-left:270px;
+    box-shadow: inset 0 0 0 2px #1b8da677 ;
+    color: rgba(0, 0, 0, 0.548);
+    background-color: #1b8da677;
+  }
+  
+
+/*Media Queries
+=========================*/
+@media only screen and (min-width: 768px) {
+  /*Desktop*/
+  .profile {
+    width: 450px;
+  }
+  .search {
+    float: none;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /*Tablet*/
+  .profile {
+    width: 70%;
+  }
+  .search {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+  /*Phone*/
+  .profile {
+    width: 90%;
+  }
+}
