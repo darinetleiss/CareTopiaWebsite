@@ -59,6 +59,11 @@ padding-left:16px;
 top: 78px;
 
   font-size: 28px;
+
+  &:hover{
+    text-decoration:none;
+}
+
   @media screen and (max-width: 1000px) {
     padding-left:95px;
     font-size:24px;
@@ -69,6 +74,7 @@ top: 78px;
      font-size:20px;
     padding-left:75px;
   }
+
 
  
 `;
@@ -116,7 +122,7 @@ export const NavLinks = styled(LinkScroll)`
 
   &.active {
     border-bottom: 3px solid #1b8da6;
-    
+    text-decoration: none;
   }
 `;
 
@@ -127,6 +133,7 @@ export const NavButton = styled.nav`
   @media screen and (max-width: 790px) {
     display: none;
   }
+  
 `;
 
 export const NavButtonLink = styled(LinkRouter)`
@@ -142,9 +149,11 @@ cursor:pointer;
 transtion:all 0.2s ease-in-out;
 text-decoration:none;
 
+
 &:hover{
     transition: all 0.2s ease-in-out;
     background:#fff;
     color:#010606;
+    text-decoration:none;
 }
 `;

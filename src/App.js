@@ -8,7 +8,8 @@ import LogIn from "./pages/logIn/logIn";
 import HomePage from "./pages/homePage/homePage";
 import { ChangePassword } from "./pages/changePassword/changePassword";
 import UpdateProfile from "./pages/updateProfile/updateProfile";
-import SideBar from "./pages/sidebar/sideBar";
+import SideBar from "./pages/SideBar/SideBarNav";
+
 
 
 // const Login = lazy(() => import("./pages/login"));
@@ -19,7 +20,11 @@ function App() {
     <Router>
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-        <Route path="/sideBar" element={<SideBar/>} exact />
+
+
+
+
+        <Route path="/SideBarNav" element={<SideBar/>} exact />
 
         <Route path="/updateProfile" element={<UpdateProfile/>} exact />
 

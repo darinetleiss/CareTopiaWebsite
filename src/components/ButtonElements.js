@@ -21,5 +21,6 @@ export const Button = styled(Link)`
     transition: all 0.2s ease-in-out;
     background: ${({ primary }) => (primary ? "#fff" : "#1B8DA6")};
     color: ${({primary})=>(primary ? "#000" : "#fff")};
+    text-decoration: none;
   }
 `;

@@ -62,6 +62,7 @@ export const TopBarLink = styled(LinkScroll)`
   &:hover {
     color: #1B8DA6;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
   }
 `;
 
@@ -88,5 +89,6 @@ export const ToBarRoute = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+    text-decoration: none;
   }
 `;
