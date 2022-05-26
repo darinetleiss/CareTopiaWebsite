@@ -16,12 +16,12 @@
     margin:0;
     padding:0;
   }
-  li{
+  .active4{
     height: 50px;
     position:relative;
     background-color: transparent;
    }
-  a {
+  .aa {
     border-top: 1px solid rgba(255,255,255,0.1);
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -40,23 +40,23 @@
   .text4 {
     transition: all .4s linear;
   }
-  li:hover .text4{
+  .active4:hover .text4{
    margin-left:20px
   }
-  .active4 a {
+  .active4 .aa {
     color: #1B8DA6;
     border-left:5px solid #1B8DA6;
     background-color: #fafafa;
     font-weight: bold;
     outline:0;
   }
-  li:not(.active4):hover a{
+  .active4:not(.active4):hover .aa{
     color: #fafafa;
     font-weight: bold;
      background-color: #1B8DA6;
   }
   
-  span[class ^= "icon"]{
+  .text4[class ^= "icon"]{
     position:absolute;
     left:20px;
     font-size:1.5em;
@@ -67,23 +67,23 @@
     .text4{
       display:none;
     }
-    .nav-container4, a {
+    .nav-container4, .aa {
       width: 70px;
     }
-    a:hover{
+    .aa:hover{
       width: 200px;
       z-index:1;
       border-top: 1px solid rgba(255,255,255,0.1);
       border-bottom: 1px solid black;
       box-shadow: 0 0 1px 1px black;
     }
-    a:hover .text {
+    .aa:hover .text {
       display:block;
       padding-left: 30%;    
     }
     
   }
   @media only screen and (max-width: 480px){
-    .nav-container4, a{ width:50px; }
-    span[class ^= "icon"]{left:8px;}
+    .nav-container4, .aa{ width:50px; }
+    .text4[class ^= "icon"]{left:8px;}
   }

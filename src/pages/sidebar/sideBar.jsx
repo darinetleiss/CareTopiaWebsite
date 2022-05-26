@@ -11,7 +11,7 @@ export default function sideBar() {
     <div className="nav-container4">
       <ul className="nav4">
         <li className="active4">
-          <a href="#">
+          <a href="#" className="aa">
             
           <CgProfile className="icon-home4" />
              <span className="text4">Edit Profile</span>
