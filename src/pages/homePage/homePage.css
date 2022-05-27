@@ -316,3 +316,51 @@ body {
     height: 300px;
   }
 }
+
+
+
+ 
+ 
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px #1B8DA6;
+    z-index: 1;
+    right: -20px;
+    margin-top: 8px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content .aMenu {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content .aMenu:hover {
+    color: #1B8DA6;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+   
+
+.hrMenu{
+  margin-top:0px ;
+  margin-bottom: 0px;
+}
+ 

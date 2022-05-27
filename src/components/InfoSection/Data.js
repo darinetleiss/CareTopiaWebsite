@@ -48,7 +48,7 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: true,
-    To: './signup',
+    To: './signUp',
    };
   
   

@@ -8,6 +8,7 @@ import { FaRegComments , FaRegComment , FaEllipsisH} from "react-icons/fa";
 import {AiFillHeart} from "react-icons/ai";
 import {BsEmojiLaughing} from "react-icons/bs";
 import {CgProfile} from "react-icons/cg";
+import Menu from "./Menu";
 
 export default function HomePage() {
 
@@ -26,8 +27,14 @@ export default function HomePage() {
             <GrAddCircle className="icon" />
             <BiDonateHeart className="icon" />
             
-            <CgProfile className="icon user-profile" />
- 
+            {/* <CgProfile className="icon user-profile" /> */}
+            <Menu/>
+
+
+
+
+
+
           </div>
         </div>
       </nav>
