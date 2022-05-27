@@ -12,13 +12,13 @@ export function ChangePassword() {
     if (newPassword.current.value !== confirmPassword.current.value) {
       confirmPassword.current.setCustomValidity("Passwords don't match!");
     } else {
-      const ngo = {
+      const newpass = {
         oldPassword: oldPassword.current.value,
         newPassword: newPassword.current.value,
         passwordConfirm: confirmPassword.current.value,
       };
       try {
-        await axios.patch("/auth/updatePassword", ngo);
+        await axios.patch("/auth/updatePassword", newpass);
         alert("Password updated successfully");
       } catch (e) {
         if (e.response && e.response.data) {
@@ -39,7 +39,7 @@ export function ChangePassword() {
     <div className="wrapper2">
       <div className="profile">
         <div className="content">
-          <form action="">
+          <form onSubmit={handleUpdatePassword}>
             <fieldset>
               <p className="Updatepass">Update Password </p>
               <div className="grid-65"></div>

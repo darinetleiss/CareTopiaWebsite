@@ -47,7 +47,7 @@ export default function logIn() {
         <div className="d-flex flex-column text-center">
           <form>
             <div className="form-group">
-              <label>Email Address / Phone Number</label>
+              <label>Email Address</label>
               <input type="email" className="form-control" id="email1" />
             </div>
             <div className="form-group">
