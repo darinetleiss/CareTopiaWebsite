@@ -9,6 +9,7 @@ import {AiFillHeart} from "react-icons/ai";
 import {BsEmojiLaughing} from "react-icons/bs";
 import {CgProfile} from "react-icons/cg";
 import Menu from "./Menu";
+import NavHomePage from "./NavHomePage";
 
 export default function HomePage() {
 
@@ -16,7 +17,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="nav-wrapper">
           <img src={logo} className="brand-img" alt="" />
           <div className="nav-items">
@@ -27,7 +28,7 @@ export default function HomePage() {
             <GrAddCircle className="icon" />
             <BiDonateHeart className="icon" />
             
-            {/* <CgProfile className="icon user-profile" /> */}
+          
             <Menu/>
 
 
@@ -37,7 +38,10 @@ export default function HomePage() {
 
           </div>
         </div>
-      </nav>
+      </nav> */}
+
+
+<NavHomePage/>
       <section className="main">
         <div className="wrapperHome">
           <div className="left-col">

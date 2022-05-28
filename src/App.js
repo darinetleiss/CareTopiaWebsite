@@ -7,6 +7,7 @@ import SignUp from "./pages/signUp/signUp";
 import LogIn from "./pages/logIn/logIn";
 import HomePage from "./pages/homePage/homePage";
 import Settings from "./pages/settings/settings";
+import Donate from "./pages/Donate/donate";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/logIn" element={<LogIn />} exact />
           <Route path="/signUp" element={<SignUp />} exact />
           <Route path="/settings" element={<Settings />} exact />
-
+          <Route path="/donate" element={<Donate />} exact />
           <Route path="/test" element={<Test />} exact />
         </Routes>
       </Suspense>

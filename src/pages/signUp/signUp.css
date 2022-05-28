@@ -36,7 +36,7 @@
   :focus {
     outline: none; }
   
-  .wrapper {
+  .wrapperSign {
     border: 30px;
     min-height: 100vh;
     padding : 1.5%;
@@ -81,7 +81,7 @@
       bottom: 9px;
       right: 0; }
   
-  .form-control {
+  .form-controlSign {
     border: 1px solid #333;
     border-top: none;
     border-right: none;
@@ -93,19 +93,19 @@
     margin-bottom: 25px;
     margin-top: -3px;
      }
-    .form-control::-webkit-input-placeholder {
+    .form-controlSign::-webkit-input-placeholder {
       font-size: 13px;
       color: #333;
       font-family: "Poppins-Regular"; }
-    .form-control::-moz-placeholder {
+    .form-controlSign::-moz-placeholder {
       font-size: 13px;
       color: #333;
       font-family: "Poppins-Regular"; }
-    .form-control:-ms-input-placeholder {
+    .form-controlSign:-ms-input-placeholder {
       font-size: 13px;
       color: #333;
       font-family: "Poppins-Regular"; }
-    .form-control:-moz-placeholder {
+    .form-controlSign:-moz-placeholder {
       font-size: 13px;
       color: #333;
       font-family: "Poppins-Regular"; }
@@ -206,7 +206,7 @@
       -webkit-transform: translateX(0);
       transform: translateX(0); } }
   @media (max-width: 1199px) {
-    .wrapper {
+    .wrapperSign {
       background-position: right center; } }
   @media (max-width: 991px) {
     .inner form {
@@ -225,6 +225,6 @@
     button {
       margin-top: 60px; } }
     
-  .wrapper{
+  .wrapperSign{
       background-image: url('../../assets/signUp/bg-registration-form-1.jpg');
   }

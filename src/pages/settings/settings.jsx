@@ -2,12 +2,16 @@ import { useState } from "react";
 import ChangePassword from "../changePassword/changePassword";
 import UpdateProfile  from "../updateProfile/updateProfile"
 import Terms from "../Terms_Help/termsConditions"
-import Help from "../Terms_Help/help"
+import Help from "../Terms_Help/help";
+import NavHomePage from "../homePage/NavHomePage";
 export default function Settings(){
     const [active,setActive] = useState("profile");
 
+
+
     return(
         <div>
+ <NavHomePage/>
             <nav>
                 <p style={{paddingTop:150}}/>
                 <button onClick={() => setActive("profile")}>Update Profile</button>
