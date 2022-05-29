@@ -1,0 +1,256 @@
+
+/* .main_8{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.popu_header_8{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.body1_8{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.left_8{
+  padding-left: 180px;
+}
+.name_8{
+  padding-left: 10px;
+}
+.space_8{
+  margin-bottom: 30px;
+}
+  
+.button1_8{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+
+  }
+  .Accept1_8{
+    margin-left: 10px;
+  }
+  .Cancel1_8{
+    margin-right: 10px;
+  }
+  .button1_8 button{
+    background: blue;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+  }
+.container0_8 {
+    background-color: rgba(198, 217, 229, 0.612);
+    padding: 40px;
+    padding-top: 20;
+    width: 800px;
+    height: 800px;
+}
+.close_8{
+  cursor: pointer;
+  
+} */
+
+.body18{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.image8{
+  text-align: center;
+  clip-path: circle();
+  height: 200px;
+  margin-top: 20px;
+}
+.box4t8{
+  width: 340px;
+  height: 45px;
+  /* border-radius: 8px; */
+  border-color: black;
+  border-width: 20px;
+  background-color: rgb(199, 217, 243);
+}
+.box7t8{
+  width: 400px;
+  height: 45px;
+  /* border-radius: 8px; */
+  border-color: black;
+  border-width: 20px;
+  background-color: rgb(199, 217, 243);
+}
+.box5t8{
+  width: 900px;
+  height: 45px;
+  /* border-radius: 8px; */
+  border-color: black;
+  border-width: 20px;
+  background-color: rgb(199, 217, 243);
+}
+.text1k8{
+  padding-top: 8px;
+  padding-left: 10px;
+}
+.button1p8{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.button1p8 button{
+  background: #1877f2;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+.container08 form{
+display: flex;
+  position: relative;
+  /* margin-top: 16px; */
+  min-height: 460px;
+  background-color: white;
+  overflow: hidden;
+  width: 800px;
+}
+.container08 form .form8{
+display: flex;
+  position: absolute;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+.container08 form .form.second8{
+display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+form.secActive8 .form.second8{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+form.secActive8 .form8.first8{
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+.container08 form .title8{
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #333;
+}
+.container08 form .fields8{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 750px;
+  margin-left: 100px; */
+}
+form .fields8 .input-field18{
+  display: flex;
+  width: calc(100% / 2 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+  padding-bottom: 10px;
+}
+form .fields8 .input-field8{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 4px 0;
+}
+.input-field8 label{
+display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.input-field8 input, select{
+display: flex;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input-field18 label{
+display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+  padding-bottom: 10px;
+}
+
+.input-field18 input, select{
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+
+.input-field18 input :focus,
+.input-field18 select:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+@media (max-width: 750px) {
+  .container08 form{
+      overflow-y: scroll;
+  }
+  /* .container08 form::-webkit-scrollbar{
+     display: none;
+  } */
+  form .fields .input-field{
+      /* width: calc(100% / 2 - 15px); */
+      
+  }
+}
+
+@media (max-width: 550px) {
+  form .fields .input-field{
+      /* width: 100%; */
+  }
+} 
+

@@ -1,0 +1,144 @@
+.body3x{
+    display: flex;
+    justify-content: center;
+}
+.circleimagex{
+    clip-path: circle();
+    height: 120px;
+    width: 150px;
+    /* margin-top:50px;
+    margin-left: 550px; */
+    margin-top: 40px;
+    margin-left: 300px;
+    } 
+   .columnnl{
+       display: flex;
+       /* width: 200px; */
+   }
+    .image3x{
+        width: 280px;
+        height: 200px;
+       
+    }
+    .image4x{
+        padding-top: 10px;
+        width: 280px;
+        height: 200px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .image5x{
+        width: 280px;
+        height: 200px;
+        margin-left: 20px;
+        
+    }
+    .postsx{
+        /* margin-top: -20px; */
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .Addrequestx{
+        margin-top: 60px;
+        margin-left: -40px;
+    }
+  .Editrequestx{
+    margin-top: 60px;
+      margin-left: -50px;
+      margin-right: 20px;
+  }
+   .clickx{
+      width: 100%;
+      display: flex;
+      /* justify-content: space-evenly; */
+      margin-top: 20px;
+      padding-left: 45px;
+    }
+    .clickxy{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        padding-left: 50px;
+      }
+    .clickx button{
+      background: blue;
+      outline: none;
+      border: none;
+      color: #fff;
+      padding: 8px 40px;
+      border-radius: 20px;
+      font-size: 16px; 
+      cursor: pointer;
+    }
+    .clickxy button{
+        background: blue;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 8px 40px;
+        border-radius: 20px;
+        font-size: 16px; 
+        cursor: pointer;
+      }
+    
+    .volunteerx{
+        padding-top: 20px;
+        padding-inline-start: 0px;
+        font-size: 20px;
+    }
+    .volunteer4x{
+        padding-left: 10px;
+    }
+    .usernamex{
+        margin-left: 320px;
+        /* margin-bottom: 10px; */
+    }
+    .swicthiconm{
+        padding-top: 11px;
+        padding-left: 30px;
+    }
+    .flexch{
+        display: flex;
+    }
+    .swicthiconm{
+        font-size: 25px;
+    }
+    .descriptionx{
+        /* margin-bottom: 15px; */
+        margin-left:320px;
+    }
+    .centrex{
+        justify-content: center;
+    }
+     .buttonx{
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #fff;
+        border: #fff;
+        font-size: large;
+        /* margin-top: -30px; */
+    } 
+    .btn-nobgx{
+        margin-top: 80px;
+        cursor: pointer;
+        margin-left: -15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #fff;
+        border: #fff;
+        font-size: large
+    }
+.switchx{
+    margin-top: 23px;
+    padding-inline-start: 50px;
+}
+/* .imagedec{
+    clip-path: circle();
+    height: 120px;
+    width: 150px; 
+}
+.sameline{
+    display: flex;
+} */
