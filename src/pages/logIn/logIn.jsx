@@ -25,6 +25,7 @@ export default function LogIn() {
       await axios
         .post("http://localhost:3003/api/auth/login", ngo)
         .then((response) => {
+          console.log(authCtx.token);
           console.log(response.data.token);
           console.log(response.data._id);
           authCtx.login(response.data.token,response.data._id);

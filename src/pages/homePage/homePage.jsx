@@ -10,33 +10,22 @@ import {BsEmojiLaughing} from "react-icons/bs";
 import {CgProfile} from "react-icons/cg";
 import Menu from "./Menu";
 import NavHomePage from "./NavHomePage";
-import { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import AuthContext from "../../context/authContext";
 import { format } from 'timeago.js'
 
 export default function HomePage() {
-
-  const authCtx = useContext(AuthContext);
-  const token = authCtx.token;
 
   const [posts, sePosts] = useState({});
 
   useEffect(() => {
     const fetchPosts = async () => {
       const res = await axios.get(
-        "http://localhost:3003/api/shared/newsfeed/getTimeline",
-        {
-          headers: {
-            Authorization:
-              "Bearer " + token,
-          },
-        }
-      );
+        "http://localhost:3003/api/shared/newsfeed/getTimeline");
       sePosts(res.data);
     };
     fetchPosts();
-  },[posts, token]);
+  },[posts]);
 
  
 
@@ -70,7 +59,7 @@ export default function HomePage() {
       <section className="main">
         <div className="wrapperHome">
           <div className="left-col">
-            
+
             {posts.length > 0 && posts.map((e) => (<div className="post">
               <div className="info">
                 <div className="user">
