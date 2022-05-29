@@ -11,7 +11,7 @@ export default function Donate() {
   const [cases, seCases] = useState({});
   const [amount, setAmount] = useState(0);
 
-  const handleToken = (token) => {
+  const handleToken = ID => (token) => {
     fetch("http://localhost:3003/api/shared/payment/donateToCasesWeb", {
       method: "POST",
       headers: {
@@ -21,6 +21,10 @@ export default function Donate() {
     })
     .then(res => res.json())
     .then(_ => {
+      fetch(`http://localhost:3003/api/shared/payment/createPaymentIntentCases/updateAmountCollected/${ID}/${amount}`, {
+      method: "PATCH",
+      body: JSON.stringify({ amount }),
+    });
       window.alert("Transaction Successful.");
     }).catch(_ => window.alert("Transaction Failed."))
   }
@@ -79,6 +83,7 @@ export default function Donate() {
                         className="donation-form-item amount-input"
                         value={amount}
                         onChange={handleAmountChange}
+                        ref={donationAmount}
                       />
                       {/* <button
                     id="donationbutton"
@@ -88,7 +93,7 @@ export default function Donate() {
                   </button> */}
                       <StripeCheckout
                         stripeKey="pk_test_51KnhHxArPq1X5eRz37lRa7fZqvvLAQ88zzKHPTR6rgmnux8CHJ7oGXEnqEuQrBcX0d8jRfgJVktaDi1RLaIVgONP00zjefwVPS"
-                        token={handleToken}
+                        token={handleToken(e._id)}
                         name=""
                         panelLabel={`Donate`}
                         currency="LBP"
