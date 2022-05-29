@@ -2,7 +2,7 @@ import "./changePassword.css";
 import axios from "axios";
 import { useRef } from "react";
 
-export function ChangePassword() {
+export default function ChangePassword() {
   const oldPassword = useRef();
   const newPassword = useRef();
   const confirmPassword = useRef();

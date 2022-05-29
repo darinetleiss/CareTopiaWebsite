@@ -196,7 +196,7 @@ label{
 
 
 
-.form-control{
+.form-controlLog{
    border: none;
    border: 1px solid #333;
    border-top: none;
@@ -210,24 +210,24 @@ label{
    margin-top: -3px;
     }
 
-    .form-control:focus{
+    .form-controlLog:focus{
          box-shadow: 0 0 0 rgb(255, 255, 255);
 
     }
 
-   .form-control::-webkit-input-placeholder {
+   .form-controlLog::-webkit-input-placeholder {
      font-size: 13px;
      color: #333;
      font-family: "Poppins-Regular"; }
-   .form-control::-moz-placeholder {
+   .form-controlLog::-moz-placeholder {
      font-size: 13px;
      color: #333;
      font-family: "Poppins-Regular"; }
-   .form-control:-ms-input-placeholder {
+   .form-controlLog:-ms-input-placeholder {
      font-size: 13px;
      color: #333;
      font-family: "Poppins-Regular"; }
-   .form-control:-moz-placeholder {
+   .form-controlLog:-moz-placeholder {
      font-size: 13px;
      color: #333;
      font-family: "Poppins-Regular"; }

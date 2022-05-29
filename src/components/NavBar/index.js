@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
-import logo from '..//..//assets/Logo.svg'
+import logo from "..//..//assets/Logo.svg";
 import {
   Nav,
   NavBarContainer,
@@ -15,6 +15,7 @@ import {
   NavButtonLink,
   Logo,
 } from "./NavBarElements";
+
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -34,6 +35,12 @@ const NavBar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const [active,setActive] = useState(false);
+
+  const handleClose = () => setActive(false);
+  const handleShow = () => setActive(true);
+
   return (
     <>
       <IconContext.Provider value={{ color: "#1B8DA6" }}>
@@ -111,7 +118,7 @@ const NavBar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavButton>
-              <NavButtonLink to="SIGN_IN ">Sign In</NavButtonLink>
+              <NavButtonLink to="SIGN_IN " onClick={handleShow}>Log In</NavButtonLink>
             </NavButton>
           </NavBarContainer>
         </Nav>

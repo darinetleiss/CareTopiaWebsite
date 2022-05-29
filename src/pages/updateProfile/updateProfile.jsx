@@ -34,7 +34,7 @@ export default function UpdateProfile() {
   };
 
   return (
-    <body>
+    <body className="bodyupdateProfile">
       <div className="wrapper3">
         <div className="profile3">
           <div className="content3">
@@ -50,7 +50,7 @@ export default function UpdateProfile() {
               </fieldset>
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="fname">NGO Name</label>
+                  <label htmlFor="fname" className="labelUpdateProfile">NGO Name</label>
                 </div>
                 <div className="grid-653">
                   <input type="text" id="fname3" tabindex="1" />
@@ -59,7 +59,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="description">Description</label>
+                  <label className="labelUpdateProfile" htmlFor="description">Description</label>
                 </div>
                 <div className="grid-653">
                   <textarea
@@ -74,7 +74,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="licenseNumber">License Number</label>
+                  <label className="labelUpdateProfile" htmlFor="licenseNumber">License Number</label>
                 </div>
                 <div className="grid-653">
                   <input type="text" id="location3" tabindex="4" />
@@ -83,7 +83,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="phoneNumber">Phone Number</label>
+                  <label className="labelUpdateProfile" htmlFor="phoneNumber">Phone Number</label>
                 </div>
                 <div className="grid-653">
                   <input type="text" id="country3" tabindex="5" />
@@ -92,7 +92,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="email">Email Address</label>
+                  <label className="labelUpdateProfile" htmlFor="email">Email Address</label>
                 </div>
                 <div className="grid-653">
                   <input type="email" id="email3" tabindex="6" />
@@ -101,7 +101,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="location">Location</label>
+                  <label className="labelUpdateProfile" htmlFor="location">Location</label>
                 </div>
                 <div className="grid-653">
                   <input type="text" id="location3" tabindex="9" />
@@ -110,7 +110,7 @@ export default function UpdateProfile() {
 
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="qualification">Field Of Work</label>
+                  <label className="labelUpdateProfile" htmlFor="qualification">Field Of Work</label>
                 </div>
                 <div className="grid-653">
                 <input type="text" id="FieldOfWork" tabindex="9" />

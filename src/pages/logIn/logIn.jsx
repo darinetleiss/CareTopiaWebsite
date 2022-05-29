@@ -4,28 +4,11 @@ import { loginCall } from "../../apiCalls";
 import AuthContext from "../../context/authContext";
 import { Link } from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
-import "./logIn.css";
+ import "./logIn.css";
 import "./logIn1.css";
 import "font-awesome/css/font-awesome.min.css";
 
 export default function LogIn() {
-  //   const email = useRef();
-  //   const password = useRef();
-
-  //   const { ngo, isFetching, dispatch } = useContext(AuthContext);
-
-  //   const handlLogIn = (e) => {
-  //     e.preventDefault();
-
-  //     loginCall(
-  //       {
-  //         email: email.current.value,
-  //         password: password.current.value,
-  //       },
-  //       dispatch()
-  //     );
-  //   };
 
   const email = useRef();
   const password = useRef();
@@ -43,7 +26,8 @@ export default function LogIn() {
         .post("http://localhost:3003/api/auth/login", ngo)
         .then((response) => {
           console.log(response.data.token);
-          authCtx.login(response.data.token);
+          console.log(response.data._id);
+          authCtx.login(response.data.token,response.data._id);
           alert("login successful");
         });
     } catch (e) {
@@ -85,7 +69,7 @@ export default function LogIn() {
                       <label>Email Address</label>
                       <input
                         type="email"
-                        className="form-control"
+                        className="form-controlLog"
                         id="email1"
                         required
                         ref={email}
@@ -95,7 +79,7 @@ export default function LogIn() {
                       <label>Password</label>
                       <input
                         type="password"
-                        className="form-control"
+                        className="form-controlLog"
                         id="password1"
                         required
                         ref={password}

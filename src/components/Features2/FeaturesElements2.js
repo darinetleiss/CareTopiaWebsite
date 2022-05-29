@@ -7,6 +7,31 @@ export const FeaturesContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+
+  @media screen and (max-width: 768px) {
+    height: 1100px;
+  }
+
+  @media screen and(max-width:480px) {
+    height: 1300px;
+  }
+`;
+
+export const BrDonate = styled.div`
+ background-color:#f5f5f5;
+ 
+ 
+ `
+
+export const FeaturesContainerD = styled.div`
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 141, 166, 20%);
+
+
   @media screen and (max-width: 768px) {
     height: 1100px;
   }

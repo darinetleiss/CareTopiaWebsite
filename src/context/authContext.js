@@ -1,58 +1,32 @@
-// import { createContext, useEffect, useReducer } from "react";
-// import AuthReducer from "./authReducer";
-
-// const INITIAL_STATE = {
-//   ngo: JSON.parse(localStorage.getItem("ngo")) || null,
-//   isFetching: false,
-//   error: false,
-// };
-
-// export const AuthContext = createContext(INITIAL_STATE);
-
-// export const AuthContextProvider = ({ children }) => {
-//   const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE);
-
-// useEffect(() => {
-//     localStorage.setItem("ngo", JSON.stringify(state.ngo));
-//   }, [state.ngo]);
-
-//   return (
-//     <AuthContext.Provider
-//       value={{
-//         ngo : state.ngo,
-//         isFetching: state.isFetching,
-//         error: state.error,
-//         dispatch,
-//       }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
-//     }
 import React, { useState } from "react";
 
 const AuthContext = React.createContext({
   token: "",
+  _id:"",
   isLoggedIn:false,
-  login: (token) => {},
+  login: (token,id) => {},
   logout: () => {},
 });
 
 export const AuthContextProvider = (props) => {
   const [token, setToken] = useState(null);
+  const [_id, setId] = useState(null);
 
   const userIsLoggedIn = !!token;
 
-  const loginHandler = (token) => {
+  const loginHandler = (token,id) => {
     setToken(token);
+    setId(id);
   };
 
   const logoutHandler = () => {
     setToken(null);
+    setId(null);
   };
 
   const contextValue = {
     token: token,
+    _id:_id,
     isLoggedIn:userIsLoggedIn,
     login: loginHandler,
     logout: logoutHandler,

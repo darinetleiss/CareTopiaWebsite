@@ -41,7 +41,7 @@ export default function SignUp() {
       }
   };
   return (
-    <div className="wrapper">
+    <div className="wrapperSign">
       <div className="inner">
         <div className="image-holder">
           <img src={Image} />
@@ -53,7 +53,7 @@ export default function SignUp() {
             <label className="label">NGO Name</label>
             <input
               type="text"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={ngoName}
             />
@@ -63,7 +63,7 @@ export default function SignUp() {
             <label>Email Address</label>
             <input 
             type="text" 
-            className="form-control" 
+            className="form-controlSign" 
             required 
             ref={email} />
           </div>
@@ -72,7 +72,7 @@ export default function SignUp() {
             <label>Phone Number</label>
             <input
               type="text"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={phoneNumber}
             />
@@ -82,7 +82,7 @@ export default function SignUp() {
             <label>NGO Location</label>
             <input
               type="text"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={ngoLocation}
             />
@@ -92,7 +92,7 @@ export default function SignUp() {
             <label>License Number</label>
             <input
               type="text"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={licenseNumber}
             />
@@ -102,7 +102,7 @@ export default function SignUp() {
             <label>Password</label>
             <input
               type="password"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={password}
             />
@@ -112,7 +112,7 @@ export default function SignUp() {
             <label>Confirm Password</label>
             <input
               type="password"
-              className="form-control"
+              className="form-controlSign"
               required
               ref={confirmpassword}
             />
@@ -125,7 +125,7 @@ export default function SignUp() {
                 <input
                   type="text"
                   spellCheck="false"
-                  className="form-control"
+                  className="form-controlSign"
                   required
                   ref={fieldWork}
                 />
