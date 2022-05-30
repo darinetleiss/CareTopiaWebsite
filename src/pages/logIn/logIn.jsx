@@ -56,12 +56,14 @@ export default function LogIn() {
        <p className="or"><span>or</span></p>
  
        <div className="email-login">
-          <label for="email"> <b>Email</b></label>
+          <label htmlFor="email"> <b>Email</b></label>
           <input className="inputLogIn" type="text" placeholder="Enter Email" name="uname" required/>
-          <label for="psw"><b>Password</b></label>
+          <label htmlFor="psw"><b>Password</b></label>
           <input className="inputLogIn"  type="password" placeholder="Enter Password" name="psw" required/>
        </div>
-       <button className="cta-btn">Log In</button> 
+       
+       <button className="cta-btn" onClick={()=>{window.location.replace("http://localhost:3000/homePage")
+}} >Log In</button>  
      </form>
  </div>
  </>

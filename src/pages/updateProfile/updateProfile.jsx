@@ -59,6 +59,7 @@ export default function UpdateProfile() {
   };
 
   return (
+    
     <div className="bodyupdateProfile">
       <div className="wrapper3">
         <div className="profile3">
@@ -83,7 +84,7 @@ export default function UpdateProfile() {
                   <input
                     type="text"
                     id="fname3"
-                    tabindex="1"
+                    tabIndex="1"
                     placeholder={ngo.username}
                     ref={ngoName}
                   />
@@ -102,7 +103,7 @@ export default function UpdateProfile() {
                     id=""
                     cols="30"
                     rows="auto"
-                    tabindex="3"
+                    tabIndex="3"
                     placeholder={ngo.description}
                     ref={description}
                   ></textarea>
@@ -119,7 +120,7 @@ export default function UpdateProfile() {
                   <input
                     type="text"
                     id="location3"
-                    tabindex="4"
+                    tabIndex="4"
                     placeholder={ngo.officialNumber}
                     ref={licenseNumber}
                   />
@@ -136,7 +137,7 @@ export default function UpdateProfile() {
                   <input
                     type="text"
                     id="country3"
-                    tabindex="5"
+                    tabIndex="5"
                     placeholder={ngo.contactNumber}
                     ref={phoneNumber}
                   />
@@ -153,7 +154,7 @@ export default function UpdateProfile() {
                   <input
                     type="email"
                     id="email3"
-                    tabindex="6"
+                    tabIndex="6"
                     placeholder={ngo.email}
                     ref={email}
                   />
@@ -170,7 +171,7 @@ export default function UpdateProfile() {
                   <input
                     type="text"
                     id="location3"
-                    tabindex="9"
+                    tabIndex="9"
                     placeholder={ngo.location}
                     ref={ngoLocation}
                   />
@@ -187,7 +188,7 @@ export default function UpdateProfile() {
                   <input
                     type="text"
                     id="FieldOfWork"
-                    tabindex="9"
+                    tabIndex="9"
                     placeholder={ngo.categories}
                     ref={fieldWork}
                   />
@@ -201,7 +202,7 @@ export default function UpdateProfile() {
                   id="cancel2"
                   value="Cancel"
                 />
-                <input type="submit" className="Btn 3" value="Save Changes" onClick={handelUpdateProfile}/>
+                <input type="submit" className="Btn3" value="Update" onClick={handelUpdateProfile}/>
               </fieldset>
             </form>
           </div>

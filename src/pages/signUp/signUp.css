@@ -253,3 +253,9 @@ label {
 .wrapperSign {
   background-image: url("../../assets/signUp/bg-registration-form-1.jpg");
 }
+
+
+
+.form-controlSign:focus{
+   border-bottom: 2px solid  #1b8da6;
+ }

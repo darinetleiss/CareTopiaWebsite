@@ -3,8 +3,10 @@ import ChatOnline from '../chatOnline/ChatOnline';
 import './messenger.css';
 import Conversation from '../component/Conversation';
 import Messages from '../messages/messages';
-import Topbar from '../topbar/Topbar';
+// import Topbar from '../topbar/Topbar';
 import { useState, useRef } from 'react';
+import NavHomePage from "../../homePage/NavHomePage";
+ 
 
 const Messenger1 = () => {
   const [send,setSend]=useState(false);
@@ -18,7 +20,7 @@ const Messenger1 = () => {
 
   return (
     <div>
-     <Topbar/>
+     <NavHomePage/>
      <div>
     <div className="messenger">
     <div className="chatMenu">

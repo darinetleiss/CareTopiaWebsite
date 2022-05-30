@@ -4,7 +4,8 @@ import "./profile_screen.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar4 from './navbar/navbar4';
+// import Navbar4 from './navbar/navbar4';
+import NavHomePage from '../homePage/NavHomePage';
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Profile = () => {
   return (
     <div>
   <div>
-   <Navbar4 />
+   <NavHomePage />
       <div>
        <table>
       <tr>
@@ -92,7 +93,7 @@ const Profile = () => {
         
         <div>
           <div className='body3x'>
-              <div className='columnnl'>
+              <div className='columnnl' >
                 
                 <button className='buttonx'>
                 <i class="fa fa-plus" aria-hidden="true"></i>

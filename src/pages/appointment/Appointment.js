@@ -3,8 +3,7 @@ import "./Appointment.css";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Barnav from '../Volunteer_person_screen/bar/navbar';
-import Navbarapp from './navbarapp/navbarapp';
+ 
 
 
 export const Appointment = () => {
@@ -183,9 +182,8 @@ export const Appointment = () => {
 // </div>
 
 <div>
-    <Navbarapp/>
-    <div className='body18'>
-    <div className='container08' >
+     <div className='body1'>
+    <div className='container0' >
     {/* <div className="image">
         <img src={volunteerRequestDetails.requestOwner.picture}alt='image'/>
       </div> */}
@@ -195,16 +193,16 @@ export const Appointment = () => {
       </div> */}
       <div>
          <form action="#">
-        <div className="form first8">
-            <div className="details personal8">
+        <div className="form first">
+            <div className="details personal">
                 {/* <span className="title">Personal Details</span> */}
-                <div className="fields8">
-                        <div className="input-field18">
+                <div className="fields">
+                        <div className="input-field1">
                             <label>First Name</label>
                             {/* <input type="text" placeholder="Enter your name" /> */
                             }
-                            <div className='box4t8' >
-                            <div className='text1k8' >
+                            <div className='box4t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.firstname}
                             </p>
@@ -213,21 +211,21 @@ export const Appointment = () => {
 
                         </div>
 
-                        <div className="input-field18">
+                        <div className="input-field1">
                             <label>Last Name</label>
                             {/* <input type="text" placeholder="Last Name" required/> */}
-                            <div className='box7t8' >
-                            <div className='text1k8' >
+                            <div className='box7t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.lastname}
                             </p>
                             </div>
                             </div>
                         </div> 
-                    <div className="input-field8">
+                    <div className="input-field">
                         <label>Email</label>
-                        <div className='box5t8' >
-                            <div className='text1k8' >
+                        <div className='box5t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.email}
                             </p>
@@ -235,11 +233,11 @@ export const Appointment = () => {
                             </div>
                     </div>
 
-                    <div class="input-field8">
+                    <div class="input-field">
                         <label>Phone Number</label>
                         {/* <input type="text" placeholder="Enter mobile number" required/> */}
-                        <div className='box5t8' >
-                            <div className='text1k8' >
+                        <div className='box5t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.phonenumber}
                             </p>
@@ -248,33 +246,33 @@ export const Appointment = () => {
                     </div>
 
 
-                    <div className="input-field8">
+                    <div className="input-field">
                         <label>Age</label>
                         {/* <input type="text" placeholder="" required /> */}
-                        <div className='box5t8' >
-                            <div className='text1k8' >
+                        <div className='box5t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.age}
                             </p>
                             </div>
                             </div>
                     </div>
-                    <div className="input-field8">
+                    <div className="input-field">
                         <label>Reason </label>
                         {/* <input type="text" placeholder="" required/> */}
-                        <div className='box5t8' >
-                            <div className='text1k8' >
+                        <div className='box5t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.appointmentreason}
                             </p>
                             </div>
                             </div>
                     </div>
-                    <div className="input-field8">
+                    <div className="input-field">
                         <label>Date Desired</label>
                         {/* <input type="text" placeholder="" required/> */}
-                        <div className='box5t8' >
-                            <div className='text1k8' >
+                        <div className='box5t' >
+                            <div className='text1k' >
                             <p>
                             {appointmentRequestDetails.dateforappointment}
                             </p>
@@ -285,9 +283,9 @@ export const Appointment = () => {
             </div>
             </div> 
     </form>
-    <div className="button1p8">
-        <button onClick={acceptAppointmentRequest}>Accept</button>
-        <button onClick={declineAppointmentRequest}>Decline</button>
+    <div  >
+        <button  className='Decline'  onClick={acceptAppointmentRequest}>Accept</button>
+        <button className='Accept' onClick={declineAppointmentRequest}>Decline</button>
       </div>
     </div>
 </div>

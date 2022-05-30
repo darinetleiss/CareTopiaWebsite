@@ -87,7 +87,7 @@ export const AppointmentScreen = () => {
               </td>
               <td>
                 <div className="button12l">
-                  <button className="Cancell" onClick={declineAppointmentRequest(e._id)}>Decline</button>
+                  <button className="Cancelll" onClick={declineAppointmentRequest(e._id)}>Decline</button>
                 </div>
               </td>
             </tr>

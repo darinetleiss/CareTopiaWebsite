@@ -95,6 +95,7 @@ export default function Donate() {
                         stripeKey="pk_test_51KnhHxArPq1X5eRz37lRa7fZqvvLAQ88zzKHPTR6rgmnux8CHJ7oGXEnqEuQrBcX0d8jRfgJVktaDi1RLaIVgONP00zjefwVPS"
                         token={handleToken(e._id)}
                         name=""
+                        className="donation-form-item btn-donate"
                         panelLabel={`Donate`}
                         currency="LBP"
                         amount={amount * 100}

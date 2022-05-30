@@ -6,30 +6,35 @@
   margin-bottom: 10px;
   margin-top: 20px;
   margin-left: 110px;
+  cursor: pointer;
 }
 .body9l {
   min-height: 200vh;
    display: flex;
   justify-content: center;
   background: white;
+
 }
 .username1l {
   padding-left: 30px;
   margin-top: 20px;
   font-size: large;
+  cursor: pointer;
 }
-.Acceptl {
+/* .Acceptl {
   margin-left: 600px;
 }
 .Cancell {
   margin-left: 20px;
   margin-right: 20px;
+  
 }
 .button12l {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 35px;
+  
 }
 
  
@@ -44,7 +49,59 @@
   font-size: large;
   transition: all 0.3s ease;
   cursor: pointer;
+} */
+
+
+
+
+.Acceptl{
+  width: 250%;
+  float: left;
+  display: block;
+  margin: 20px auto;
+  margin-left: 1000%;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #1B8DA6;
+  box-shadow: inset 0 0 0 2px #1B8DA6;
+  transition: 0.5s ease;
+  border: #1B8DA6;
+ }
+ .Acceptl:hover{
+   box-shadow: 0px 4px 12px #1B8DA6;
 }
+
+.Cancelll{
+   box-shadow: inset 0 0 0 2px #1b8da677 ;
+  color: rgba(0, 0, 0, 0.548);
+  background-color: #1b8da677;
+  border:#1b8da677 ;
+
+
+
+  width: 250%;
+  float: left;
+  display: block;
+  margin: 20px auto;
+  margin-left: 1200%;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 50px;
+   cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.Cancelll:hover{
+  box-shadow: 0px 4px 12px #d1d5d6;
+}
+
+
+
+
+
 .hrl {
   width: 1500px;
 }

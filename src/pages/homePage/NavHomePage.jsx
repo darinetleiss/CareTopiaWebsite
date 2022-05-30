@@ -18,7 +18,7 @@ export default function NavHomePage(){
         <div className="nav-wrapper">
           <img src={logo} className="brand-img" alt="" />
           <div className="nav-items">
-            <BiHomeAlt className="icon home"  />
+            <BiHomeAlt className="icon home" onClick={() => navigate("/homePage")}  />
 
             <FaRegComments className="icon" onClick={() => navigate("/chat")}/>
             {/* <BiBell className="icon" /> */}

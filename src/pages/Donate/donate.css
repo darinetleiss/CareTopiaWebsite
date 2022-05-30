@@ -12,6 +12,7 @@
 
   --smRadius: 3px;
   --mdFontSize: 1.4rem;
+  display: inline-block;
 }
 
 #donationbutton,
@@ -56,10 +57,13 @@ border-radius: 5px;
 
 .containerDonate {
   width: 100%;
-  justify-content:start;
-  padding: 120px 0;
-  margin-left: 90px;
-}
+  justify-content:center;
+
+
+
+  padding: 90px 0;
+  margin-left: 120px;
+ }
 
 .donate-card {
   width:400px;
@@ -119,6 +123,11 @@ border-radius: 5px;
   width: 90%;
   margin: auto;
   color: var(--secondaryColor);
+
+
+
+
+  height: 450px;
 }
 
 .main-section-donate .containerDonate .notice .highlightDonate {
@@ -126,7 +135,11 @@ border-radius: 5px;
 }
 
 .main-section-donate .containerDonate .descriptionDonation {
-  margin: 25px 0;
+  
+  
+  
+  
+  margin: 10px 0;
 }
 
 .main-section-donate .containerDonate .formDonation {
@@ -156,11 +169,8 @@ border-radius: 5px;
   font-size: 15px;
 }
 
-.main-section-donate .containerDonate .formDonation .btn-donate {
-  background-color: #1B8DA6;
-  color: var(--mutedColor);
-  font-size: var(--mdFontSize);
-  border-radius: 5px;
+  .btn-donate {
+ background-color: white;
 }
 
  

@@ -4,7 +4,7 @@ import pic from './Hdhut.blogspot.com (5).jpg';
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Barnav from './bar/navbar';
+// import NavHomePage from "../homePage/NavHomePage"
 
 
 export const VolunteerPerson = () => {
@@ -67,7 +67,7 @@ export const VolunteerPerson = () => {
 
   return (
     <div>
-    <Barnav/>
+    {/* <NavHomePage/> */}
     <div className='body1'>
     <div className='container0' >
     {/* <div className="image">
@@ -155,9 +155,11 @@ export const VolunteerPerson = () => {
             </div>
             </div> 
     </form>
-    <div className="button1p">
-        <button onClick={acceptVolunteerRequest}>Accept</button>
-        <button onClick={declineVolunteerRequest}>Decline</button>
+    <div
+    //  className="button1p"
+     >
+        <button className='Decline' onClick={declineVolunteerRequest}>Decline</button>
+        <button className='Accept' onClick={acceptVolunteerRequest}>Accept</button>
       </div>
     </div>
 </div>

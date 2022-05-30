@@ -14,6 +14,13 @@
    .columnnl{
        display: flex;
        /* width: 200px; */
+      width: 130px;
+        height: 30px;
+        border-top: 2px solid rgb(0, 0, 0);
+          margin-left: 0px;
+        margin-top:-17px;
+  
+
    }
     .image3x{
         width: 280px;
@@ -35,7 +42,7 @@
     }
     .postsx{
         /* margin-top: -20px; */
-        margin-bottom: 5px;
+        margin-bottom: -8px;
         cursor: pointer;
         font-size: 16px;
     }
@@ -63,7 +70,7 @@
         padding-left: 50px;
       }
     .clickx button{
-      background: blue;
+      background: #1B8DA6;
       outline: none;
       border: none;
       color: #fff;
@@ -73,7 +80,7 @@
       cursor: pointer;
     }
     .clickxy button{
-        background: blue;
+        background: #1B8DA6;
         outline: none;
         border: none;
         color: #fff;
@@ -90,11 +97,16 @@
     }
     .volunteer4x{
         padding-left: 10px;
+        padding-top: 16px;
     }
     .usernamex{
         margin-left: 320px;
         /* margin-bottom: 10px; */
     }
+
+
+   
+
     .swicthiconm{
         padding-top: 11px;
         padding-left: 30px;
@@ -115,7 +127,7 @@
      .buttonx{
         padding-left: 10px;
         padding-right: 10px;
-        background-color: #fff;
+        background-color: transparent;
         border: #fff;
         font-size: large;
         /* margin-top: -30px; */

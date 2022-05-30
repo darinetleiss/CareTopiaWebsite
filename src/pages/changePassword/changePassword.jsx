@@ -45,12 +45,14 @@ export default function ChangePassword() {
   };
 
   return (
+    <>
+    <p className="Updatepass">Update Password </p>
     <div className="wrapper2">
       <div className="profile">
         <div className="content">
           <form>
             <fieldset>
-              <p className="Updatepass">Update Password </p>
+            
               <div className="grid-65"></div>
             </fieldset>
             <fieldset>
@@ -99,5 +101,6 @@ export default function ChangePassword() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -133,13 +133,12 @@ export default function SignUp() {
               </ul>
             </div>
             <div className="details">
-              <p>
-                <span>10</span> / 10
-              </p>
+              <p></p>
             </div>
           </div>
-          <button className="btnSignup">
-            Sign Up<i id="iSignUp" className="zmdi zmdi-arrow-right" type="submit"></i>
+          <button className="btnSignup" to="/homePage">
+            Sign Up
+            <i id="iSignUp" className="zmdi zmdi-arrow-right" type="submit"></i>
           </button>
         </form>
       </div>

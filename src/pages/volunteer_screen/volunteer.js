@@ -91,7 +91,7 @@ export const VolunteerScreen = () => {
               </td>
               <td>
                 <div className="button12l">
-                  <button className="Cancell" onClick={declineVolunteerRequest(e._id)}>Decline</button>
+                  <button className="Cancelll" onClick={declineVolunteerRequest(e._id)}>Decline</button>
                 </div>
               </td>
             </tr>
