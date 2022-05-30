@@ -1,0 +1,24 @@
+.btnSettings{
+    border: none;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    border-color: transparent;
+}
+
+ .divset{
+     height: 650px;
+     border-left: 2px solid rgb(117, 110, 110);
+       margin-left: 200px;
+     margin-top: -560px;
+ }
+
+ .btnSettings:hover{
+     color: #1B8DA6;
+     outline: none;
+ }
+ 
+ .btnSettings:focus{
+    outline: none;
+ }

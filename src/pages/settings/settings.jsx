@@ -4,6 +4,7 @@ import UpdateProfile  from "../updateProfile/updateProfile"
 import Terms from "../Terms_Help/termsConditions"
 import Help from "../Terms_Help/help";
 import NavHomePage from "../homePage/NavHomePage";
+import "./settings.css";
 export default function Settings(){
     const [active,setActive] = useState("profile");
 
@@ -13,16 +14,17 @@ export default function Settings(){
         <div>
  <NavHomePage/>
             <nav>
-                <p style={{paddingTop:150}}/>
-                <button onClick={() => setActive("profile")}>Update Profile</button>
+                <p  />
+                <button className="btnSettings" onClick={() => setActive("profile")}>Update Profile</button>
                 <p/>
-                <button onClick={() => setActive("password")}>Change Password</button>
+                <button className="btnSettings"  onClick={() => setActive("password")}>Change Password</button>
                 <p/>
-                <button onClick={() => setActive("terms")}>Terms & Conditions</button>
+                <button className="btnSettings"  onClick={() => setActive("terms")}>Terms & Conditions</button>
                 <p/>
-                <button onClick={() => setActive("help")}>Help</button>
+                <button className="btnSettings"  onClick={() => setActive("help")}>Help</button>
             </nav>
-            <div>
+            
+            <div className="divset">
                 {active === "profile" && <UpdateProfile/>}
                 {active === "password" && <ChangePassword/>}
                 {active === "terms" && <Terms/>}

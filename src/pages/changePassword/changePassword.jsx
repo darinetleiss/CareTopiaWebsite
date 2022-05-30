@@ -22,7 +22,7 @@ export default function ChangePassword() {
         alert("Password updated successfully");
       } catch (e) {
         if (e.response && e.response.data) {
-          alert(e.response.data.message); // some reason error message
+          alert(e.response.data.message);
         }
       }
     }
@@ -51,7 +51,7 @@ export default function ChangePassword() {
                 </label>
               </div>
               <div className="grid-65">
-                <input type="password" id="fname" tabIndex="1"  />
+                <input className="inputchangepassword" type="password" id="fname" tabIndex="1"  />
               </div>
             </fieldset>
 
@@ -62,7 +62,7 @@ export default function ChangePassword() {
                 </label>
               </div>
               <div className="grid-65">
-                <input type="password" id="fname" tabIndex="2" />
+                <input className="inputchangepassword"  type="password" id="fname" tabIndex="2" />
               </div>
             </fieldset>
 
@@ -73,7 +73,7 @@ export default function ChangePassword() {
                 </label>
               </div>
               <div className="grid-65">
-                <input type="password" id="location" tabIndex="4" />
+                <input className="inputchangepassword"  type="password" id="location" tabIndex="4" />
               </div>
             </fieldset>
 

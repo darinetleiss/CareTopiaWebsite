@@ -12,33 +12,32 @@ export default function UpdateProfile() {
   const fieldWork = useRef();
 
   const handelUpdateProfile = async (e) => {
-      e.preventDefault();
-        const ngo = {
-            username: ngoName.current.value,
-            email: email.current.value,
-            contactNumber: phoneNumber.current.value,
-            categories: fieldWork.current.value,
-            officialNumber: licenseNumber.current.value,
-            location: ngoLocation.current.value,
-            description : description.current.value,
-        };
-        try {
-          await axios.patch("/updateProfile", ngo);
-          alert("Your profile has been updated successfully");
-        } catch (e) {
-          if (e.response && e.response.data) {
-            alert(e.response.data.message); // some reason error message
-          }
+    e.preventDefault();
+    const ngo = {
+      username: ngoName.current.value,
+      email: email.current.value,
+      contactNumber: phoneNumber.current.value,
+      categories: fieldWork.current.value,
+      officialNumber: licenseNumber.current.value,
+      location: ngoLocation.current.value,
+      description: description.current.value,
+    };
+    try {
+      await axios.patch("/updateProfile", ngo);
+      alert("Your profile has been updated successfully");
+    } catch (e) {
+      if (e.response && e.response.data) {
+        alert(e.response.data.message); // some reason error message
       }
-
+    }
   };
 
   return (
-    <body className="bodyupdateProfile">
+    <div className="bodyupdateProfile">
       <div className="wrapper3">
         <div className="profile3">
           <div className="content3">
-            <form action="">
+            <form  className="formUpdateProfile" action="">
               <fieldset>
                 <div className="grid-353">
                   <span className="photo3" title="Upload your Avatar!"></span>
@@ -50,16 +49,20 @@ export default function UpdateProfile() {
               </fieldset>
               <fieldset>
                 <div className="grid-353">
-                  <label htmlFor="fname" className="labelUpdateProfile">NGO Name</label>
+                  <label htmlFor="fname" className="labelUpdateProfile">
+                    NGO Name
+                  </label>
                 </div>
                 <div className="grid-653">
-                  <input type="text" id="fname3" tabindex="1" />
+                  <input type="text" id="fname3" tabIndex="1" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="description">Description</label>
+                  <label className="labelUpdateProfile" htmlFor="description">
+                    Description
+                  </label>
                 </div>
                 <div className="grid-653">
                   <textarea
@@ -67,69 +70,79 @@ export default function UpdateProfile() {
                     id=""
                     cols="30"
                     rows="auto"
-                    tabindex="3"
+                    tabIndex="3"
                   ></textarea>
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="licenseNumber">License Number</label>
+                  <label className="labelUpdateProfile" htmlFor="licenseNumber">
+                    License Number
+                  </label>
                 </div>
                 <div className="grid-653">
-                  <input type="text" id="location3" tabindex="4" />
+                  <input type="text" id="location3" tabIndex="4" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="phoneNumber">Phone Number</label>
+                  <label className="labelUpdateProfile" htmlFor="phoneNumber">
+                    Phone Number
+                  </label>
                 </div>
                 <div className="grid-653">
-                  <input type="text" id="country3" tabindex="5" />
+                  <input type="text" id="country3" tabIndex="5" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="email">Email Address</label>
+                  <label className="labelUpdateProfile" htmlFor="email">
+                    Email Address
+                  </label>
                 </div>
                 <div className="grid-653">
-                  <input type="email" id="email3" tabindex="6" />
+                  <input type="email" id="email3" tabIndex="6" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="location">Location</label>
+                  <label className="labelUpdateProfile" htmlFor="location">
+                    Location
+                  </label>
                 </div>
                 <div className="grid-653">
-                  <input type="text" id="location3" tabindex="9" />
+                  <input type="text" id="location3" tabIndex="9" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <div className="grid-353">
-                  <label className="labelUpdateProfile" htmlFor="qualification">Field Of Work</label>
+                  <label className="labelUpdateProfile" htmlFor="qualification">
+                    Field Of Work
+                  </label>
                 </div>
                 <div className="grid-653">
-                <input type="text" id="FieldOfWork" tabindex="9" />
+                  <input type="text" id="FieldOfWork" tabIndex="9" />
                 </div>
               </fieldset>
 
               <fieldset>
                 <input
                   type="button"
-                  className="Btn cancel 3"
+                  className="Btn cancel3"
                   id="cancel2"
                   value="Cancel"
                 />
-                <input type="submit" className="Btn 3" value="Save Changes" />
+                <input type="submit" className="Btn3" value="Update" />
               </fieldset>
             </form>
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

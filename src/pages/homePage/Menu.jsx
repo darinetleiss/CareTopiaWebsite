@@ -14,7 +14,7 @@ export default function Menu(){
          
         <div className="dropdown">
         <CgProfile className="icon user-profile" />
-        <div class="dropdown-content">
+        <div className="dropdown-content">
               <a className="aMenu" href="#">  <CgProfile className="icon " />Profile</a>
               <a className="aMenu" href="/settings"><FiSettings className="icon" />Settings</a>
               <a className="aMenu" href="#"><MdOutlineSwitchAccount className="icon" />Volunteer Requests</a>
