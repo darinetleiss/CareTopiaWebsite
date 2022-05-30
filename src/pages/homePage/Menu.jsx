@@ -14,11 +14,11 @@ export default function Menu(){
          
         <div className="dropdown">
         <CgProfile className="icon user-profile" />
-        <div className="dropdown-content">
-              <a className="aMenu" href="#">  <CgProfile className="icon " />Profile</a>
+        <div class="dropdown-content">
+              <a className="aMenu" href="/profile">  <CgProfile className="icon " />Profile</a>
               <a className="aMenu" href="/settings"><FiSettings className="icon" />Settings</a>
-              <a className="aMenu" href="#"><MdOutlineSwitchAccount className="icon" />Volunteer Requests</a>
-              <a  className="aMenu" href="#"><BsCalendarPlus className="icon" />Appointment Requests</a>
+              <a className="aMenu" href="/allVolunteers"><MdOutlineSwitchAccount className="icon" />Volunteer Requests</a>
+              <a  className="aMenu" href="/allAppointments"><BsCalendarPlus className="icon" />Appointment Requests</a>
               <hr className="hrMenu"/>
                <a className="aMenu" href="/"><MdLogout className="icon" />Log out</a>
             </div>

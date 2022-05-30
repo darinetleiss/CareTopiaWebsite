@@ -9,22 +9,6 @@ import "./logIn1.css";
 import "font-awesome/css/font-awesome.min.css";
 
 export default function LogIn() {
-  //   const email = useRef();
-  //   const password = useRef();
-
-  //   const { ngo, isFetching, dispatch } = useContext(AuthContext);
-
-  //   const handlLogIn = (e) => {
-  //     e.preventDefault();
-
-  //     loginCall(
-  //       {
-  //         email: email.current.value,
-  //         password: password.current.value,
-  //       },
-  //       dispatch()
-  //     );
-  //   };
 
   const email = useRef();
   const password = useRef();
@@ -41,8 +25,10 @@ export default function LogIn() {
       await axios
         .post("http://localhost:3003/api/auth/login", ngo)
         .then((response) => {
+          console.log(authCtx.token);
           console.log(response.data.token);
-          authCtx.login(response.data.token);
+          console.log(response.data._id);
+          authCtx.login(response.data.token,response.data._id);
           alert("login successful");
         });
     } catch (e) {

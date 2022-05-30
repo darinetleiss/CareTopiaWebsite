@@ -1,0 +1,47 @@
+.image1l {
+  text-align: center;
+  clip-path: circle();
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.body9l {
+  min-height: 200vh;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+.username1l {
+  padding-left: 30px;
+  margin-top: 20px;
+  font-size: large;
+}
+.Acceptl {
+  margin-left: 850px;
+}
+.Cancell {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.button12l {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+.button12l button {
+  background: blue;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 20px;
+  font-size: large;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hrl {
+  width: 1500px;
+}
