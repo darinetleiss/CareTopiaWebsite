@@ -66,6 +66,7 @@ display: flex;
   background-color: white;
   overflow: hidden;
   width: 800px;
+  height: 600px;
 }
 .container0 form .form{
 display: flex;

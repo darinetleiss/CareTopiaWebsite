@@ -134,6 +134,15 @@ export const VolunteerPerson = () => {
                             </div>
                     </div>
                     <div className="input-field">
+                        <label>Age</label>
+                        {/* <input type="text" placeholder="" required/> */}
+                        <div className='box5t' >
+                            <div className='text1k' >
+                            <p>{volunteerRequestDetails.personalinfo}</p>
+                            </div>
+                            </div>
+                    </div>
+                    <div className="input-field">
                         <label>Brief info about volunteer </label>
                         {/* <input type="text" placeholder="" required/> */}
                         <div className='box5t' >
