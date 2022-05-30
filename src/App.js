@@ -26,7 +26,7 @@ function App() {
           <Route path="/signUp" element={<SignUp />} exact />
           <Route path="/settings" element={<Settings />} exact />
           <Route path="/donate" element={<Donate />} exact />
-          <Route path="/test" element={<Test />} exact />
+          {/* <Route path="/test" element={<Test />} exact /> */}
 
           <Route path="/appointment/:ID" element={<Appointment/>} />
           <Route path="/chat" element={<Messenger1/>}/>

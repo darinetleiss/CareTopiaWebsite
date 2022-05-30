@@ -1,7 +1,6 @@
 import React from 'react';
 import pic2 from './Hdhut.blogspot.com (5).jpg';
 import "./profile_screen.css";
-import { Form } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
