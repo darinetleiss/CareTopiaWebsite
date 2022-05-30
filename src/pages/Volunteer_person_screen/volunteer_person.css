@@ -6,6 +6,7 @@
   justify-content: center;
   background: white;
 }
+
 .image{
   text-align: center;
   clip-path: circle();
@@ -74,6 +75,7 @@ display: flex;
   background-color: #fff;
   transition: 0.3s ease;
 }
+
 .container0 form .form.second{
 display: flex;
   opacity: 0;
@@ -149,6 +151,7 @@ display: block;
   font-weight: 500;
   color: #2e2e2e;
   padding-bottom: 10px;
+  
 }
 
 .input-field1 input, select{

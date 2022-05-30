@@ -4,7 +4,9 @@ import pic1 from "./102197-Small-Kitten.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar7 from "./navbar/navbar7";
+// import Navbar7 from "./navbar/navbar7";
+import NavHomePage from "../homePage/NavHomePage"
+
 
 export const VolunteerScreen = () => {
   const navigate = useNavigate();
@@ -65,7 +67,8 @@ export const VolunteerScreen = () => {
 
   return (
     <div>
-      <Navbar7/>
+      {/* <Navbar7/> */}
+      <NavHomePage/>
     <div className="body9l">
       <div className="containerl">
         {volunteerRequests.length > 0 && volunteerRequests.map((e) => (

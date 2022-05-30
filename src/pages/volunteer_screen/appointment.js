@@ -3,7 +3,7 @@ import "./volunteer.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar3 from "./navbar3/navbar3";
+ import NavHomePage from "../homePage/NavHomePage"
 
 export const AppointmentScreen = () => {
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ export const AppointmentScreen = () => {
 
   return (
     <div>
-      <Navbar3/>
+      <NavHomePage/>
     <div className="body9l">
       <div className="containerl">
         {volunteerRequests.length > 0 && volunteerRequests.map((e) => (
