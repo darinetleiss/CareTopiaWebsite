@@ -118,7 +118,7 @@ const NavBar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavButton>
-              <NavButtonLink to="SIGN_IN " onClick={handleShow}>Log In</NavButtonLink>
+              <NavButtonLink to="/logIn " onClick={handleShow}>Log In</NavButtonLink>
             </NavButton>
           </NavBarContainer>
         </Nav>

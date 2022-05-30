@@ -19,35 +19,35 @@ export default function SignUp() {
 
   const handelSignUp = async (e) => {
     e.preventDefault();
-      const newNgo = {
-        username: ngoName.current.value,
-        email: email.current.value,
-        contactNumber: phoneNumber.current.value,
-        password: password.current.value,
-        categories: fieldWork.current.value,
-        officialNumber: licenseNumber.current.value,
-        location: ngoLocation.current.value,
-        confirmPassword:confirmpassword.current.value,
-      };
-      try {
-        await axios.post("http://localhost:3003/api/auth/signup-NGO", newNgo);
-        alert(
-          "Signed Up succesfully. The request will be looked into and an email will be sent in 3 to 5 business days about decision.\nThank you for signing up with CareTopia"
-        );
-      } catch (e) {
-        if (e.response && e.response.data) {
-          alert(e.response.data.message);
-        }
+    const newNgo = {
+      username: ngoName.current.value,
+      email: email.current.value,
+      contactNumber: phoneNumber.current.value,
+      password: password.current.value,
+      categories: fieldWork.current.value,
+      officialNumber: licenseNumber.current.value,
+      location: ngoLocation.current.value,
+      confirmPassword: confirmpassword.current.value,
+    };
+    try {
+      await axios.post("http://localhost:3003/api/auth/signup-NGO", newNgo);
+      alert(
+        "Signed Up succesfully. The request will be looked into and an email will be sent in 3 to 5 business days about decision.\nThank you for signing up with CareTopia"
+      );
+    } catch (e) {
+      if (e.response && e.response.data) {
+        alert(e.response.data.message);
       }
+    }
   };
   return (
     <div className="wrapperSign">
-      <div className="inner">
+      <div className="innerSignUp">
         <div className="image-holder">
           <img src={Image} />
         </div>
-        <form onSubmit={handelSignUp}>
-          <h3>SingUp Form</h3>
+        <form className="formSignUp" onSubmit={handelSignUp}>
+          <h3 className="h3Signup">SignUp Form</h3>
 
           <div className="form-wrapper">
             <label className="label">NGO Name</label>
@@ -61,11 +61,12 @@ export default function SignUp() {
 
           <div className="form-wrapper">
             <label>Email Address</label>
-            <input 
-            type="text" 
-            className="form-controlSign" 
-            required 
-            ref={email} />
+            <input
+              type="text"
+              className="form-controlSign"
+              required
+              ref={email}
+            />
           </div>
 
           <div className="form-wrapper">
@@ -137,8 +138,8 @@ export default function SignUp() {
               </p>
             </div>
           </div>
-          <button>
-            Sign Up<i className="zmdi zmdi-arrow-right" type="submit"></i>
+          <button className="btnSignup">
+            Sign Up<i id="iSignUp" className="zmdi zmdi-arrow-right" type="submit"></i>
           </button>
         </form>
       </div>

@@ -1,22 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-
-body {
-  width: 100%;
-  background: #fafafa;
-  position: relative;
-  font-family: sans-serif;
-}
-
+ body{
+  background: #FAFAFA;
+ }
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  
 }
 
 .nav-wrapper {
@@ -58,8 +45,7 @@ body {
 .user-profile {
   width: 26px;
   border-radius: 50%;
-  /* background-image: url(../../assets/testImages/profile-pic.png); */
-  background-size: cover;
+   background-size: cover;
 }
 
 .main {
@@ -70,10 +56,11 @@ body {
 }
 
 .wrapperHome {
-  width: 70%;
+  width: 60%;
   max-width: 1000px;
   grid-template-columns: 60% 40%;
   grid-gap: 30px;
+  margin-top: -50px;
 }
 
 .profile-pic {
@@ -174,11 +161,7 @@ body {
   stroke: rgb(251, 57, 88);
 }
 
-/* .home{
-  fill: blue;
-  stroke-width: 20px;
-  stroke:blue ;
-  } */
+ 
 
 .description {
   margin: 10px 0;
@@ -199,8 +182,7 @@ body {
 .comment-wrapper {
   width: 100%;
   height: 50px;
-  border-radius: 1px solid #dfdfdf;
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -209,7 +191,7 @@ body {
   height: 30px;
 }
 
-.comment-box {
+input .comment-box {
   width: 80%;
   height: 100%;
   border: none;
@@ -217,8 +199,8 @@ body {
   font-size: 14px;
 }
 
-.comment-btn,
-.action-btn {
+.comment-btn 
+  {
   width: 70px;
   height: 100%;
   background: none;
@@ -226,8 +208,12 @@ body {
   outline: none;
   text-transform: capitalize;
   font-size: 15px;
-  color: rgb(0, 162, 255);
-  opacity: 0.5;
+  color: black;
+   cursor: pointer;
+
+}
+form{
+  
 }
 
 .reaction-wrapper {
@@ -321,15 +307,13 @@ body {
 
  
  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+   .dropdown {
     position: relative;
     display: inline-block;
    
   }
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffff;
@@ -342,21 +326,18 @@ body {
     margin-top: 8px;
   }
   
-  /* Links inside the dropdown */
-  .dropdown-content .aMenu {
+   .dropdown-content .aMenu {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content .aMenu:hover {
+   .dropdown-content .aMenu:hover {
     color: #1B8DA6;
   }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+   .dropdown:hover .dropdown-content {display: block;}
    
 
 .hrMenu{

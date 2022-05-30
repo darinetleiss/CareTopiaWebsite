@@ -31,7 +31,7 @@ export default function ChangePassword() {
         alert("Password updated successfully");
       } catch (e) {
         if (e.response && e.response.data) {
-          alert(e.response.data.message); // some reason error message
+          alert(e.response.data.message);
         }
       }
     }

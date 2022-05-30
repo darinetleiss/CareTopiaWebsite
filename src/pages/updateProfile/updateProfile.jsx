@@ -59,11 +59,11 @@ export default function UpdateProfile() {
   };
 
   return (
-    <body className="bodyupdateProfile">
+    <div className="bodyupdateProfile">
       <div className="wrapper3">
         <div className="profile3">
           <div className="content3">
-            <form action="">
+            <form  className="formUpdateProfile" action="">
               <fieldset>
                 <div className="grid-353">
                   <span className="photo3" title="Upload your Avatar!"></span>
@@ -197,7 +197,7 @@ export default function UpdateProfile() {
               <fieldset>
                 <input
                   type="button"
-                  className="Btn cancel 3"
+                  className="Btn cancel3"
                   id="cancel2"
                   value="Cancel"
                 />
@@ -207,6 +207,6 @@ export default function UpdateProfile() {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

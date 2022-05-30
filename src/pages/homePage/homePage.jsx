@@ -1,14 +1,9 @@
 import "./homePage.css";
 // import 'font-awesome/css/font-awesome.min.css';
 import cover from "../../assets/testImages/cover 13.png";
-import logo from "../../assets/HomePage/CareTopia.png";
-import { GrAddCircle } from "react-icons/gr";
-import { BiHomeAlt, BiBell, BiDonateHeart } from "react-icons/bi";
-import { FaRegComments , FaRegComment , FaEllipsisH} from "react-icons/fa";
-import {AiFillHeart} from "react-icons/ai";
-import {BsEmojiLaughing} from "react-icons/bs";
-import {CgProfile} from "react-icons/cg";
-import Menu from "./Menu";
+import { FaRegComment, FaEllipsisH } from "react-icons/fa";
+import { AiFillHeart } from "react-icons/ai";
+import { BsEmojiLaughing } from "react-icons/bs";
 import NavHomePage from "./NavHomePage";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -31,31 +26,7 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* <nav className="navbar">
-        <div className="nav-wrapper">
-          <img src={logo} className="brand-img" alt="" />
-          <div className="nav-items">
-            <BiHomeAlt className="icon home" />
-
-            <FaRegComments className="icon" />
-            <BiBell className="icon" />
-            <GrAddCircle className="icon" />
-            <BiDonateHeart className="icon" />
-            
-          
-            <Menu/>
-
-
-
-
-
-
-          </div>
-        </div>
-      </nav> */}
-
-
-<NavHomePage/>
+      <NavHomePage />
       <section className="main">
         <div className="wrapperHome">
           <div className="left-col">
@@ -73,8 +44,8 @@ export default function HomePage() {
               <img src={e.picture} className="post-image" alt="" />
               <div className="post-content">
                 <div className="reaction-wrapper">
-                <AiFillHeart className="icon like"     />
-                <FaRegComment className="icon" />
+                  <AiFillHeart className="icon like" />
+                  <FaRegComment className="icon" />
                 </div>
                 <p className="likes">{e.likes.length}</p>
                 <p className="description">
@@ -82,10 +53,12 @@ export default function HomePage() {
                 </p>
                 <p className="post-time">{format(e.createdAt)}</p>
               </div>
+              <hr className="hrMenu"></hr>
               <div className="comment-wrapper">
-              <BsEmojiLaughing className="icon" />
-                <input
+                <BsEmojiLaughing className="icon" />
+                <input 
                   type="text"
+                  id="inpuhome"
                   className="comment-box"
                   placeholder="Add a comment"
                 />

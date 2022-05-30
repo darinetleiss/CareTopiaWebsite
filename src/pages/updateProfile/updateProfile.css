@@ -1,10 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Montez); */
-
-body {
-  background-color: #f5f5f5;
-  font-family: Lato;
-}
 .profile3,
 .content3 {
   -webkit-transition: 0.5s ease;
@@ -13,7 +6,7 @@ body {
 }
 .profile3 {
   position: absolute;
-  top: 100px;
+  top: -450px;
   bottom: auto;
   left: 0;
   right: 0;
@@ -35,7 +28,6 @@ body {
   bottom: 0;
   /*border: 1px solid #eee;*/
   /*background-color: yellow;*/
-  
 }
 .short-info3 {
   position: relative;
@@ -49,24 +41,6 @@ body {
   /*border-top: 2px solid #39cb58;*/
   border-radius: 2.5px;
   /*box-shadow: inset 0 -1.5px #ddd;*/
-}
-.details3 {
-  width: 97.5%;
-  /*background-color: red;*/
-  margin: 2.5px auto;
-}
-.tab-heads3 {
-  color: #777;
-  margin: 0 2.5px;
-}
-.tabs3 {
-  height: 200px;
-  width: 97.5%;
-  margin: 0 auto;
-  /* border-top: 2.5px solid #39cb58; */
-  background-color: #f2ecee;
-  border-radius: 2.5px;
-  /* background-color: #f3f3f3; */
 }
 
 span.photo3 {
@@ -84,7 +58,7 @@ span.photo3 {
   background-size: 100%;
   border-radius: 100%;
   border: 2px solid #ddd;
-  padding-left: - 2px;
+  padding-left: -2px;
 }
 span.photo3:after {
   content: " Add Profile Pic ";
@@ -120,12 +94,6 @@ input[type="file"] {
   border: 0px;
 }
 
-span.name3,
-span.links3 > h3,
-h4 {
-  font-family: Lato;
-  /*font-weight: 200;*/
-}
 span.name3 {
   position: absolute;
   top: 20%;
@@ -135,11 +103,15 @@ span.name3 {
 }
 label {
   color: #555;
-  line-height: 2.1em;
+ 
   margin-left: 10px;
 }
 label[for="avatar"] {
   line-height: 120px;
+}
+
+.formUpdateProfile{
+  margin-top: 50%;
 }
 
 .profile3:hover .btn {
@@ -148,43 +120,6 @@ label[for="avatar"] {
 .short-info3 span h3,
 h4 {
   display: inline-block;
-  margin: 0;
-}
-
-div.circles3 {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.myCircle3 {
-  height: 200px;
-  width: 97.5%;
-  margin: 0 auto;
-  background-color: #f2ecee;
-  border-radius: 2.5px;
-}
-
-/*Circles Styles
-=========================*/
-.myCircle3 #tabs ul li:nth-child(1) {
-  margin: 0;
-  padding: 0px 5px 10px;
-  /*margin-top: 5px;*/
-  background-color: white;
-  border-radius: 0 0 0 30px;
-}
-.myCircle3 #tabs ul li:nth-child(2) {
-  margin-left: -3px;
-  padding: 0 5px 10px;
-  border-radius: 0 0 30px 0;
-  background-color: white;
-}
-.myCircle3 #tabs .active {
-  border-bottom: none;
-  padding-left: 10px;
-}
-.myCircle3 #tabs {
-  padding: 0;
   margin: 0;
 }
 
@@ -199,7 +134,7 @@ input {
   background-color: #f7f7f7;
   box-shadow: 0 0 4px rgba(10, 39, 129, 0.7);
   padding: 5px;
-  width: 75%;
+  width: 40%;
   margin: 5px auto;
   border: 0;
   border-radius: 10px;
@@ -227,33 +162,23 @@ input:focus {
   text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content:right;
- 
+  justify-content: right;
+}
 
- }
-
-
-.fieldofwork{
-     margin-left:  3px;
-    width: 75%;
-    position: relative;
- }
-
+.fieldofwork {
+  margin-left: 3px;
+  width: 75%;
+  position: relative;
+}
 
 .grid-653 {
   position: relative;
   width: 65%;
   float: right;
-  
+
   /* font-family: Source Sans Pro; */
   font-weight: 300;
   font-size: 17px;
- 
-}
-#tabs-1 div,
-#tabs-2 div,
-#tabs-3 div {
-  border-bottom: 1px solid #ddd;
 }
 
 #qualification3 {
@@ -279,10 +204,7 @@ input:focus {
   font-weight: 200;
   margin: 5px auto 15px auto;
 }
- 
-select option {
-  padding: 5px;
-}
+
 fieldset {
   text-align: center;
   /* background-color: rgba(0,0,0,0.01); */
@@ -295,30 +217,31 @@ fieldset:last-child {
   border-bottom: none;
 }
 input.Btn3 {
-  width: 48%;
+  width:150px;
   float: left;
   display: block;
-  margin: 40px auto;
-  margin-left: 1%;
+  margin: 20px auto;
+  margin-left: 7%;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  background-color: #1b8da6;
-  box-shadow: inset 0 0 0 2px #1b8da6;
+  background-color: #1B8DA6;
+  box-shadow: inset 0 0 0 2px #1B8DA6;
   transition: 0.5s ease;
 }
 input.Btn3:hover {
   background-color: #1b8da6;
 }
 
-#cancel2{
-    margin-left:270px;
-    box-shadow: inset 0 0 0 2px #1b8da677 ;
-    color: rgba(0, 0, 0, 0.548);
-    background-color: #1b8da677;
-  }
-  
+#cancel2 {
+  margin-left: 300px;
+  box-shadow: inset 0 0 0 2px #1b8da677;
+  color: rgba(0, 0, 0, 0.548);
+  background-color: #1b8da677;
+  width:150px;
+}
 
 /*Media Queries
 =========================*/
@@ -327,25 +250,11 @@ input.Btn3:hover {
   .profile {
     width: 450px;
   }
-  .search {
-    float: none;
-    /* top: 0; */
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
 }
 @media only screen and (max-width: 768px) {
   /*Tablet*/
   .profile {
     width: 70%;
-  }
-  .search {
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 520px) {
