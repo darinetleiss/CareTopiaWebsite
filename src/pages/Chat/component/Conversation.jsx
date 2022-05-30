@@ -6,10 +6,10 @@ const Conversation = () => {
     <div className="conversation">
     <img
       className="conversationImg"
-      src="https://pixy.org/src/465/4656907.jpg"
+      src="https://res.cloudinary.com/caretopia/image/upload/v1653853802/caretopia/wqoraeqnfpo897q1qhc3.png"
       alt=""
     />
-    <span className="conversationName"> John Hon</span>
+    <span className="conversationName"> NoorAHajjaj</span>
   </div></div>
   )
 }
