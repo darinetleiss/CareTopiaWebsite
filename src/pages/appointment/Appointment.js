@@ -18,7 +18,7 @@ export const Appointment = () => {
         {
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGQxYmE0ZTgxMDQyMDU1ZDAxNDVmNSIsImlhdCI6MTY1Mzc0NDM3N30.sXlytBA3b11haSu1g2OfStITWOP5RLwigBIiLao7r3U",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMGQxYmE0ZTgxMDQyMDU1ZDAxNDVmNSIsImlhdCI6MTY1MzkwMzIxOH0.X3WaCJPayeHoSCMzMfFdDGEQowCXnvhFb3mRMjZIix0",
           },
         }
       );
@@ -286,8 +286,8 @@ export const Appointment = () => {
             </div> 
     </form>
     <div className="button1p8">
-        <button >Accept</button>
-        <button >Decline</button>
+        <button onClick={acceptAppointmentRequest}>Accept</button>
+        <button onClick={declineAppointmentRequest}>Decline</button>
       </div>
     </div>
 </div>
